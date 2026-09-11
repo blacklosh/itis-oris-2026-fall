@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Табличная вёрстка</title>
+
+		<style>
+			.my-td {
+				color: red;
+			}
+
+			.my-background {
+				background-color: #00FF00;
+			}
+
+			.button {
+			  width: auto;
+			  height: 63px;
+			  background: linear-gradient(135deg, #40d435, #444fe9);
+			  color: #ffffff;
+			  opacity: 0.79;
+			  font-family: 'Courier New', monospace;
+			  font-size: 16px;
+			  font-weight: 700;
+			  border-radius: 8px;
+			  padding: 12px 24px;
+			  transition: all 0.3s ease;
+			  cursor: pointer;
+			  display: inline-flex;
+			  user-select: auto;
+			  position: relative;
+			  overflow: hidden;
+			  align-items: center;
+			  justify-content: center;
+			  line-height: 1;
+			}
+
+			.button:hover {
+			  transform: translateY(-3px);
+			  background: linear-gradient(135deg, #e94560, #e94560);
+			  color: #ffffff;
+			}
+
+			.button:active {
+			  transform: scale(0.96);
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Внешняя таблица - один столбец, 3 строки -->
+		<table border="1" width="100%" height="100%">
+			<tr>
+				<td class="my-background">
+					<h1 class="my-td">
+						Заголовок ресурса
+					</h1>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<!-- Вторая таблица - разметка центральной части. 3 столбца, 1 строка -->
+					<table border="1" width="100%">
+						<tr>
+							<td width="20%">
+								Отдел с навигацией
+
+								<ul>
+									<li>
+										<a href="test1.html" target="_blank" class="button">Ссылка 1</a>
+									</li>
+									<li>
+										<a href="https://leetcode.com" class="my-td">Ссылка 2</a>
+									</li>
+									<li>
+										<a href="https://google.com" class="my-background">Ссылка 3</a>
+									</li>
+								</ul>
+							</td>
+							<td width="60%" class="my-background button" style="width: 100%; height: 600px;">
+								Основной контент
+							</td> 
+							<td width="20%">
+								<table border="1" width="100%">
+									<tr><td>Реклама Джавы</td></tr>
+									<tr><td>Реклама C#</td></tr>
+									<tr><td class="my-td">Реклама тестировщиков</td></tr>
+									<tr><td class="my-background">Реклама поездок к морю</td></tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>
+						Подвал сайта - (с) Fedor Gusev, 2026, звоните обращайтесь
+					</h3>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+</html>
