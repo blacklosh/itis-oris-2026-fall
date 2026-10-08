@@ -1,0 +1,8 @@
+POST localhost:80/app1/api/sign-in
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "Fedor",
+  "password": "qwerty"
+}
